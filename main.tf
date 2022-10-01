@@ -104,7 +104,7 @@ resource "azurerm_linux_virtual_machine" "my_linux_terraform_vm" {
   size                  = "Standard_B2s"
   tags = var.tags
   os_disk {
-    name                 = "myOsDisk"
+    name                 = "myOsDiskLinux"
     caching              = "ReadWrite"
     storage_account_type = "Premium_LRS"
   }
@@ -133,7 +133,7 @@ resource "azurerm_windows_virtual_machine" "my_windows_terraform_vm" {
   size                  = "Standard_B2s"
   tags = var.tags
   os_disk {
-    name                 = "myOsDisk"
+    name                 = "myOsDiskWindows"
     caching              = "ReadWrite"
     storage_account_type = "Premium_LRS"
   }
